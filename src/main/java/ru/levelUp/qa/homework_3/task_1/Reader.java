@@ -25,6 +25,7 @@ public class Reader {
 
     void reading() {
         try {
+            // TODO Не обходимо закрывать потоки ввода/вывода
             BufferedReader scanner = new BufferedReader(new InputStreamReader(System.in));
             String a = scanner.readLine();
             this.read = Double.parseDouble(a);
