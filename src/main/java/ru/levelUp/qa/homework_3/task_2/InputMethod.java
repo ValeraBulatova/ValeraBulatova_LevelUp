@@ -33,6 +33,7 @@ public class InputMethod {
 
     void inputPrice(){
         System.out.println("Input minimum price");
+        // TODO Закрытие потоков вводв/вывода
         BufferedReader inputMin = new BufferedReader(new InputStreamReader(System.in));
         try {
             String input = inputMin.readLine();
