@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuiteAll" verbose="1" >
+    <test name="TestCalculate" >
+        <classes>
+            <class name="ru.levelUp.homework_3.TestSum" />
+            <class name="ru.levelUp.homework_3.TestMinus" />
+            <class name="ru.levelUp.homework_3.TestMultiple" />
+            <class name="ru.levelUp.homework_3.TestDevide" />
+        </classes>
+    </test>
+</suite>
