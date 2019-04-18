@@ -6,6 +6,7 @@ import static org.testng.AssertJUnit.assertEquals;
 
 public class TestDevide {
 
+    // TODO А какой калькулятор тестируем??
     Divide divide = new Divide();
 
     @Test
