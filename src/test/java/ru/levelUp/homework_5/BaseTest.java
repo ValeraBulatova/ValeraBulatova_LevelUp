@@ -33,6 +33,7 @@ public class BaseTest {
     @BeforeClass (alwaysRun = true)
     public void setUpClassTest() {
         options = new ChromeOptions();
+        // TODO Нужны ли закоментированные строки?
 //        options.addArguments("--lang=ru");
 //        options.addArguments("--headless");
     }
