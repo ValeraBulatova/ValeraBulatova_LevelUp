@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuiteMantis" verbose="1" >
+    <test name="TestMantis" >
+        <classes>
+          <!--  <class name="ru.levelUp.homework_5.BaseTest" />-->
+            <class name="ru.levelUp.homework_5.TaskAddProject" />
+            <class name="ru.levelUp.homework_5.TaskAddUser" />
+        </classes>
+    </test>
+</suite>
