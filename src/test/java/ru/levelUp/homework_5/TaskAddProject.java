@@ -33,7 +33,11 @@ public class TaskAddProject extends BaseTest {
 
 //      Check New project button
         String projectName = RandomStringUtils.randomAlphabetic(10);
-        WebElement newProjButton = driver.findElement(By.xpath("//fieldset/button"));
+
+        // TODO Можно ли определить более точный локатор?
+//        Corrected
+
+        WebElement newProjButton = driver.findElement(By.xpath("//button[@type='submit']"));
         assertThat(newProjButton, notNullValue());
 
 //        кликнуть New Project
