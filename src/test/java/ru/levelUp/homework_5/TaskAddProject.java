@@ -31,7 +31,6 @@ public class TaskAddProject extends BaseTest {
 
 //      Check New project button
         String projectName = RandomStringUtils.randomAlphabetic(10);
-        // TODO Можно ли определить более точный локатор?
         WebElement newProjButton = driver.findElement(By.xpath("//fieldset/button"));
         assertThat(newProjButton, notNullValue());
 
@@ -54,7 +53,6 @@ public class TaskAddProject extends BaseTest {
         storageField.add("View Status");
         storageField.add("Description");
 
-        // TODO В hamcrest есть метод для проверки коллекций
         assertTrue(new ArrayList<>(actualFields).containsAll(new ArrayList<>(storageField)));
 
 
@@ -76,7 +74,6 @@ public class TaskAddProject extends BaseTest {
                 .sendKeys(description);
 
 //        Нажать кнопку для создания
-        // TODO Можно ли определить локатор более точно?
         driver.findElement(By.xpath("//div[@class='widget-toolbox padding-8 clearfix']/input"))
                 .click();
 

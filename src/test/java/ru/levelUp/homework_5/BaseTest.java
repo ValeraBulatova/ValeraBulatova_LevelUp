@@ -34,8 +34,6 @@ public class BaseTest {
     public void setUpClassTest() {
         options = new ChromeOptions();
         // TODO Нужны ли закоментированные строки?
-//        options.addArguments("--lang=ru");
-//        options.addArguments("--headless");
     }
     @BeforeMethod(alwaysRun = true)
     protected void setUpTest() {

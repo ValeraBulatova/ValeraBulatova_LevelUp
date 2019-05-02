@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsNull.notNullValue;
 import static org.testng.AssertJUnit.assertEquals;
@@ -40,7 +41,7 @@ public class TaskAddUser extends BaseTest {
 
 //        Проверка полей Create Account
 
-        List<WebElement> projectField = driver.findElements(By.xpath("//div[@class='table-responsive']//tr//td"));
+        List<WebElement> projectField = driver.findElements(By.xpath("//td[@class='category']"));
         List<String> actualFields = new ArrayList<>();
         for ( WebElement countField : projectField) {
             actualFields.add(countField.getText());
@@ -58,7 +59,8 @@ public class TaskAddUser extends BaseTest {
         storageField.add("Protected");
 
         // TODO В hamcrest есть метод для проверки коллекций
-        assertTrue(new ArrayList<>(actualFields).containsAll(new ArrayList<>(storageField)));
+
+        assertThat(actualFields, equalTo(storageField));
 
         //      Заполнить поля для создания проекта
 
@@ -81,8 +83,11 @@ public class TaskAddUser extends BaseTest {
 
 
 //        Проставить галочки: Enable = true, Protected = false
+
         // TODO А для каких целей использовано == false??
-        if(driver.findElement(By.name("enabled")).isSelected() == false){
+        if(driver.findElement(By.name("enabled")).isSelected()){
+
+        }else{
             driver.findElement(By.xpath("//span[@class='lbl']")).click();
         }
 
