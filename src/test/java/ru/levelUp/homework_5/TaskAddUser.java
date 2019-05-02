@@ -59,7 +59,7 @@ public class TaskAddUser extends BaseTest {
         storageField.add("Protected");
 
         // TODO В hamcrest есть метод для проверки коллекций
-
+//      Corrected
         assertThat(actualFields, equalTo(storageField));
 
         //      Заполнить поля для создания проекта
@@ -85,6 +85,7 @@ public class TaskAddUser extends BaseTest {
 //        Проставить галочки: Enable = true, Protected = false
 
         // TODO А для каких целей использовано == false??
+//        Corrected. Обеспечиваем проставление галочки Enable
         if(driver.findElement(By.name("enabled")).isSelected()){
 
         }else{

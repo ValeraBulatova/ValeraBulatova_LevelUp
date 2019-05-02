@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
+
+import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsNull.notNullValue;
 import static org.testng.AssertJUnit.*;
@@ -39,7 +41,7 @@ public class TaskAddProject extends BaseTest {
 
 //        Проверить наличие полей для создания проекта
 
-        List<WebElement> projectField = driver.findElements(By.xpath("//div[@class='widget-body']//tr//td"));
+        List<WebElement> projectField = driver.findElements(By.xpath("//td[@class='category']"));
         List<String> actualFields = new ArrayList<>();
         for ( WebElement countField : projectField) {
             actualFields.add(countField.getText());
@@ -53,7 +55,9 @@ public class TaskAddProject extends BaseTest {
         storageField.add("View Status");
         storageField.add("Description");
 
-        assertTrue(new ArrayList<>(actualFields).containsAll(new ArrayList<>(storageField)));
+        // TODO В hamcrest есть метод для проверки коллекций
+//        Corrected
+        assertThat(actualFields, equalTo(storageField));
 
 
 //      Заполнить поля для создания проекта
@@ -74,7 +78,9 @@ public class TaskAddProject extends BaseTest {
                 .sendKeys(description);
 
 //        Нажать кнопку для создания
-        driver.findElement(By.xpath("//div[@class='widget-toolbox padding-8 clearfix']/input"))
+        // TODO Можно ли определить локатор более точно?
+//        Corrected
+        driver.findElement(By.xpath("//input[@type='submit']"))
                 .click();
 
     }

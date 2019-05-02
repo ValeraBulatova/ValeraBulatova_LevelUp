@@ -24,7 +24,6 @@ public class BaseTest {
     protected WebDriver driver;
     private ChromeOptions options;
 
-
     @BeforeSuite (alwaysRun = true)
     protected void setUpSuite() {
        WebDriverManager.chromedriver().setup();
