@@ -16,7 +16,13 @@ public class InputMethod {
             String input = inputMin.readLine();
             this.min = Integer.parseInt(input);
         }catch (IOException exp){
-            System.out.println("Ochen' zhal'");
+            exp.printStackTrace();
+        }finally {
+            try {
+                inputMin.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -27,7 +33,13 @@ public class InputMethod {
             String input = inputMin.readLine();
             this.min = Double.parseDouble(input);
         }catch (IOException exp){
-            System.out.println("Ochen' zhal'");
+            exp.printStackTrace();
+        }finally{
+            try {
+                inputMin.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -39,7 +51,7 @@ public class InputMethod {
             String input = inputMin.readLine();
             this.min = Double.parseDouble(input);
         }catch (IOException exp){
-            System.out.println("Ochen' zhal'");
+            exp.printStackTrace();
         }
         System.out.println("Input maximum price");
         BufferedReader inputMax = new BufferedReader(new InputStreamReader(System.in));
@@ -47,7 +59,13 @@ public class InputMethod {
             String inputM = inputMax.readLine();
             this.max = Double.parseDouble(inputM);
         }catch (IOException exp){
-            System.out.println("Ochen' zhal'");
+            exp.printStackTrace();
+        }finally{
+            try {
+                inputMax.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
     }

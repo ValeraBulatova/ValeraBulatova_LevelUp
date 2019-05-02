@@ -3,6 +3,7 @@ package ru.levelUp.qa.homework_3.task_1;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.RandomAccessFile;
 
 public class Reader {
 
@@ -10,6 +11,7 @@ public class Reader {
     double b;
     double c;
     double read;
+
     void number(){
     Reader reader = new Reader();
         System.out.println("Input a");
@@ -24,13 +26,19 @@ public class Reader {
     }
 
     void reading() {
-        try {
+
             // TODO Не обходимо закрывать потоки ввода/вывода
             BufferedReader scanner = new BufferedReader(new InputStreamReader(System.in));
-            String a = scanner.readLine();
-            this.read = Double.parseDouble(a);
+        try {String a = scanner.readLine();
+        this.read = Double.parseDouble(a);
         }catch (IOException a){
-            System.out.println("Neozhidanno");
+            a.printStackTrace();
+        }finally {
+            try {
+                scanner.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
