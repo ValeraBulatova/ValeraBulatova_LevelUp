@@ -19,8 +19,6 @@ public class Issue {
     @JsonProperty("project")
     private Project project;
     private IssueCategory category;
-//    private IssuePriority priority;
-//    private IssueStatus status;
     @JsonProperty("files")
     private List<FilesToIssue> files;
 
