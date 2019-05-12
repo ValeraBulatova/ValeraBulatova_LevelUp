@@ -1,0 +1,30 @@
+{
+  "summary": "This is a test rest issue",
+  "priority": {
+    "name": "high"
+  },
+  "handler": {
+    "name": "vboctor"
+  },
+  "status": {
+    "name": "assigned"
+  },
+  "notes": [
+    {
+      "text": "This is a note from issue update.",
+      "view_state": {
+        "id": 10,
+        "name": "public",
+        "label": "public"
+      },
+      "type": "note"
+    },
+    {
+      "text": "Another note 2",
+      "view_state": {
+        "name": "public"
+      },
+      "type": "note"
+    }
+  ]
+}

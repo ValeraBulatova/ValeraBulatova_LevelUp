@@ -1,0 +1,17 @@
+{
+  "id": 1,
+  "name": "Project_ertyu",
+  "status": {
+    "id": 10,
+    "name": "development",
+    "label": "development"
+  },
+  "description": "Test_test",
+  "enabled": true,
+  "file_path": "/tmp/",
+  "view_state": {
+    "id": 10,
+    "name": "public",
+    "label": "public"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "summary": "W-ewfFhu",
+  "description": "W-fd2Fhu",
+  "project": {
+    "id": 361,
+    "name": "Project_For_Issue"
+  },
+  "category": {
+    "id": 5,
+    "name": "bugtracker"
+  },
+  "files": [
+    {
+      "name": "test.txt",
+      "content": "VGhpcyBpcyBhIFRFU1QuDQpUaGlzIGlzIGEgVEVTVC4NClRoaXMgaXMgYSBURVNULg0KVGhpcyBpcyBhIFRFU1QuDQpUaGlzIGlzIGEgVEVTVC4="
+    },
+    {
+      "name": "test2.txt",
+      "content": "VGhpcyBpcyBhIFRFU1QuDQpUaGlzIGlzIGEgVEVTVC4NClRoaXMgaXMgYSBURVNULg0KVGhpcyBpcyBhIFRFU1QuDQpUaGlzIGlzIGEgVEVTVC4="
+    }
+  ]
+}
