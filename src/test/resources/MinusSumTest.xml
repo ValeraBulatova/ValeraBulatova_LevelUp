@@ -8,8 +8,8 @@
             </run>
         </groups>
         <classes>
-            <class name="ru.levelUp.homework_3.TestMinus" />
-            <class name="ru.levelUp.homework_3.TestSum" />
+            <class name="ru.levelUp.homework_4.TestMinus" />
+            <class name="ru.levelUp.homework_4.TestSum" />
         </classes>
     </test>
 </suite>

@@ -3,10 +3,10 @@
 <suite name="TestSuiteAll" verbose="1" >
     <test name="TestCalculate" >
         <classes>
-            <class name="ru.levelUp.homework_3.TestSum" />
-            <class name="ru.levelUp.homework_3.TestMinus" />
-            <class name="ru.levelUp.homework_3.TestMultiple" />
-            <class name="ru.levelUp.homework_3.TestDevide" />
+            <class name="ru.levelUp.homework_4.TestSum" />
+            <class name="ru.levelUp.homework_4.TestMinus" />
+            <class name="ru.levelUp.homework_4.TestMultiple" />
+            <class name="ru.levelUp.homework_4.TestDevide" />
         </classes>
     </test>
 </suite>
