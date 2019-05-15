@@ -24,6 +24,7 @@ public class BaseTest {
     public void getJsonData(){
 
         ObjectMapper mapper = new ObjectMapper();
+        // TODO А как через файлы сделать проверку разных данных в полях?
         File readUser = new File("src/test/resources/homework_7/users.json");
         File readProject = new File("src/test/resources/homework_7/project.json");
         File readIssue = new File("src/test/resources/homework_7/issue.json");
