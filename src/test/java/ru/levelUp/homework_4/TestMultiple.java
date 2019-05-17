@@ -3,6 +3,7 @@ package ru.levelUp.homework_4;
 import org.testng.annotations.Test;
 import static org.testng.AssertJUnit.assertEquals;
 
+// TODO А где класс BaseTest
 public class TestMultiple extends BaseTest{
 
     @Test

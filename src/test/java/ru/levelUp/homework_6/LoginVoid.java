@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import ru.levelUp.qa.homework_6.LoginPage;
 
+// TODO Для чего этот класс?
 public class LoginVoid {
 
     /*public WebDriver driver;
