@@ -23,6 +23,7 @@ public class LoginPage extends BasePage {
         super(driver);
     }
 
+    // TODO Лучше использовать объект как параметер
     public void login(final String username, final String password) {
         // 2. Авторизоваться admin:admin
 //        usernameTextField.sendKeys(username);
