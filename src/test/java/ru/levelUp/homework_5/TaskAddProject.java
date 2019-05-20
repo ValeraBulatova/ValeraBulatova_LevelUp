@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -49,12 +50,9 @@ public class TaskAddProject extends BaseTest {
         }
         System.out.println(actualFields);
 
-        List<String> storageField = new ArrayList<>();
-        storageField.add("* Project Name");
-        storageField.add("Status");
-        storageField.add("Inherit Global Categories");
-        storageField.add("View Status");
-        storageField.add("Description");
+        List<String> storageField = Arrays.asList(new String[]{"* Project Name",
+                "Status", "Inherit Global Categories", "View Status",
+                "Description"});
 
         assertThat(actualFields, equalTo(storageField));
 

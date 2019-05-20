@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -48,15 +49,9 @@ public class TaskAddUser extends BaseTest {
         }
         System.out.println(actualFields);
 
-        List<String> storageField = new ArrayList<>();
-        storageField.add("Username");
-        storageField.add("Real Name");
-        storageField.add("E-mail");
-        storageField.add("Password");
-        storageField.add("Verify Password");
-        storageField.add("Access Level");
-        storageField.add("Enabled");
-        storageField.add("Protected");
+        List<String> storageField = Arrays.asList(new String[]{"Username",
+                "Real Name", "E-mail", "Password", "Verify Password",
+                "Access Level", "Enabled", "Protected"});
 
         assertThat(actualFields, equalTo(storageField));
 
