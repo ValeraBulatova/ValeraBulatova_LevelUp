@@ -3,9 +3,7 @@ package ru.levelUp.homework_4;
 import org.testng.annotations.Test;
 import static org.testng.AssertJUnit.assertEquals;
 
-public class TestDevide extends BaseTest{
-
-    // TODO А какой калькулятор тестируем??
+public class TestDivide extends BaseTest{
 
     @Test
     public void divDouble (){

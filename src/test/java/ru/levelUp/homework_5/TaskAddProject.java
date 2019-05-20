@@ -11,7 +11,7 @@ import java.util.List;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsNull.notNullValue;
-import static org.testng.AssertJUnit.*;
+
 
 
 public class TaskAddProject extends BaseTest {
